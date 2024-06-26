@@ -10,6 +10,8 @@
 
 ![Static Badge](https://img.shields.io/badge/any_text-you_like-blue?logo=gitlab&label=test)
 
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=blackmsk)](https://github.com/anuraghazra/github-readme-stats)
+
 <!--
 **blackmsk/blackmsk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
