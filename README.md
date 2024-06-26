@@ -4,7 +4,7 @@
 
 ## Hi there 👋
 
-![header](https://capsule-render.vercel.app/api?type=venom&color=auto&height=300&section=header&text=Welcome%20to%20blackmsk's%20github"%20render&fontSize=60)
+![header](https://capsule-render.vercel.app/api?type=venom&color=auto&height=300&section=header&text=Welcome%20to%20blackmsk's%20github"%20&fontSize=60)
 
 <!--
 **blackmsk/blackmsk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
