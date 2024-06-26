@@ -8,6 +8,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=4C6AF7&random=false&width=435&lines=Welcome+to+blackmsk's+github)](https://git.io/typing-svg)
 
+![Static Badge](https://img.shields.io/badge/any_text-you_like-blue?logo=gitlab&label=test)
 
 <!--
 **blackmsk/blackmsk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
