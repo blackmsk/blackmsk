@@ -19,3 +19,4 @@ const tom: User = {
 };
 
 canDrive(tom);
+
