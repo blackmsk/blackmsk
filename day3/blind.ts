@@ -1,4 +1,4 @@
-class A {
+class AA {
   name: string = "A";
   go() {
       console.log(this.name);
@@ -17,3 +17,4 @@ a.go();
 const b = new B();
 b.go = b.go.bind(a);
 b.go();
+
