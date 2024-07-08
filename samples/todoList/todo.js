@@ -23,20 +23,18 @@ function completeTodo(index, todo) {
     todo.done = true;
     todoItems.splice(index, 1, todo);
 }
-// business Logic
+// business logic
 function logFirstTodo() {
-    //할일 목록에서 첫번째 출력
+    // 할 일 목록에서 첫 번째 출력
     return todoItems[0];
 }
 function showCompleted() {
-    return todoItems.filter(function (item) {
-        return item.done;
-    });
+    return todoItems.filter(function (item) { return item.done; });
 }
 function log() {
     console.log(todoItems);
 }
-// TODO 아래 함수의 내용을 채워보세요. 아래 함수는 addTodo() 함수를 이용하여 2개의 새 할 일을 추가하는 함수입니다.
+// TODO: 아래 함수의 내용을 채워보세요. 아래 함수는 `addTodo()` 함수를 이용하여 2개의 새 할 일을 추가하는 함수입니다.
 function addTwoTodoItems() {
     var item1 = {
         id: 4,
@@ -55,7 +53,7 @@ addTwoTodoItems();
 log();
 completeTodo(1, todoItems[1]);
 log();
-var completeTodoList = showCompleted();
-console.log(completeTodoList);
+var completedTodoList = showCompleted();
+console.log(completedTodoList);
 deleteTodo(3);
 log();

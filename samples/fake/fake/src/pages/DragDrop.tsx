@@ -5,7 +5,8 @@ export default function DragDrop() {
     console.log("onDragStart", e.dataTransfer);
   const onDragEnd = (e: DragEvent<HTMLElement>) =>
     console.log("onDragEnd", e.dataTransfer);
-  const onDragOver = (e: DragEvent<HTMLElement>) => e.preventDefault();
+
+  const onDragOver = (e: DragEvent) => e.preventDefault();
   const onDrop = (e: DragEvent) => {
     e.preventDefault();
     console.log("onDrop", e.dataTransfer);

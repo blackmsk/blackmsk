@@ -8,6 +8,6 @@ document.getElementById("root")?.addEventListener("click", (e: Event) => {
   console.log("mouse click also occurs.", isTrusted, target, bubbles);
 });
 
-export default function EventListner() {
-  return <div>EventListner</div>;
+export default function EventListener() {
+  return <div>EventListener</div>;
 }

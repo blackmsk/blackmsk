@@ -24,11 +24,10 @@ export default function OnChange() {
         <input
           type="text"
           onChange={onChangeValue}
-          placeholder="type some texts"
+          placeholder="type some test"
           defaultValue="Hello"
         />
         <input type="checkbox" onChange={onChangeChecked} defaultChecked />
-
         <input
           type="file"
           onChange={onChangeFiles}

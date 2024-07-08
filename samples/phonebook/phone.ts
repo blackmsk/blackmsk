@@ -38,9 +38,6 @@ function fetchContacts(): Promise<Contact[]> {
         home: {
           num: 8201055556666,
         },
-        office: {
-          num: 8201077778888,
-        },
       },
     },
     {
@@ -48,7 +45,7 @@ function fetchContacts(): Promise<Contact[]> {
       address: "서울시 강남구",
       phones: {
         home: {
-          num: 82010777788888,
+          num: 8201077778888,
         },
         office: {
           num: 8201099990000,
@@ -66,59 +63,48 @@ class AddressBook {
   contacts: Contact[] = [];
 
   constructor() {
-    this.fetchData();
+    // this.fetchData();
   }
 
-  fetchData(): void {
-    fetchContacts().then((response) => {
+  async fetchData(): Promise<void> {
+    await fetchContacts().then((response) => {
       this.contacts = response;
     });
   }
 
   findContactByName(name: string): Contact[] {
+    // console.log(this.contacts);
     return this.contacts.filter((contact) => contact.name === name);
   }
+
   findContactByAddress(address: string): Contact[] {
     return this.contacts.filter((contact) => contact.address === address);
   }
-  // phones:{
-  //         home: {
-  //           num: 8201011112222,
-  //         },
-  //         office: {
-  //           num: 8201033334444,
-  //         },
-  //       },
+
   findContactByPhone(phoneNumber: number, phoneType: PhoneType): Contact[] {
-    // return this.contacts.filter(
-    //   (contact) => contact.phones[phoneType].num === phoneNumber
-    // );
-    return this.contacts.filter((contact) => {
-      // Check if phoneType exists in phones dictionary of contact
-      if (phoneType in contact.phones) {
-        return contact.phones[phoneType].num === phoneNumber;
-      }
-      return false;
-    });
+    return this.contacts.filter(
+      (contact) => contact.phones[phoneType].num === phoneNumber
+    );
   }
 
   addContact(contact: Contact): void {
     this.contacts.push(contact);
   }
 
-  displayListByname(): string[] {
+  displayListByName(): string[] {
     return this.contacts.map((contact) => contact.name);
   }
 
-  displayListbyAddress(): string[] {
+  displayListByAddress(): string[] {
     return this.contacts.map((contact) => contact.address);
   }
 }
 
-let addressBook: AddressBook = new AddressBook();
-// let byName: Contact[] = addressBook.findContactByName("마동석");
-// Fetching contacts asynchronously, so we need to wait for them to be fetched
-setTimeout(() => {
+async function test2() {
+  let addressBook: AddressBook = new AddressBook();
+  await addressBook.fetchData();
   let byName: Contact[] = addressBook.findContactByName("마동석");
   console.log(byName);
-}, 2000);
+}
+
+test2();

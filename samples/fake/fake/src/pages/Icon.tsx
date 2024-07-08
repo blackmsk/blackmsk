@@ -1,9 +1,11 @@
+import React from 'react';
+
 export default function Icon() {
   return (
     <div>
       <h3>Icon</h3>
       <span className="material-icons" style={{ color: "blue" }}>
-        Home
+        home
       </span>
       <span
         className="material-icons"
